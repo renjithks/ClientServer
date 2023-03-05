@@ -13,3 +13,29 @@ TCPServer::TCPServer(int port_num, std::string config_file) :
     m_server_ip = "127.0.0.1";
 }
 In both cases, we set the IP address to 127.0.0.1, which is the loopback IP address that refers to the same machine that the code is running on.
+
+Yes, you can connect a USB hardware device to a virtual machine running Ubuntu in VirtualBox and control it from within the virtual environment.
+
+Here are the steps to connect a USB device to a virtual machine in VirtualBox:
+
+Make sure that the VirtualBox Extension Pack is installed. This can be downloaded from the VirtualBox website.
+
+Connect the USB device to your host computer.
+
+In VirtualBox, select the virtual machine that you want to connect the USB device to, and click on the Settings button.
+
+In the Settings window, click on the USB tab.
+
+Check the "Enable USB Controller" box, and select the type of USB controller that you want to use (e.g. USB 1.1, USB 2.0, or USB 3.0).
+
+Click on the "Add" button to add a new USB filter.
+
+In the USB Device Filters window, click on the "Add New" button.
+
+Select the USB device that you want to connect to the virtual machine from the list of available devices, and click on "OK".
+
+Click "OK" to close the USB Settings window.
+
+Start the virtual machine. The USB device should now be available to the virtual machine.
+
+Once the USB device is connected to the virtual machine, you can control it from within the virtual environment just as you would with a physical Ubuntu machine.
